@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-const {LINK_DB} = process.env;
+
 const connectionString = LINK_DB;
 
 // mongoose.connect(connectionsString,{
