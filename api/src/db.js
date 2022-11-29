@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-
-const connectionString = process.env.MONGODB_URI;
+ 
 
 // mongoose.connect(connectionsString,{
 //     useNewUrlParser: true,
@@ -15,7 +14,7 @@ const connectionString = process.env.MONGODB_URI;
 
 const db = async () =>{
     try {
-        const db = await mongoose.connect(connectionString)
+        const db = await mongoose.connect(process.env.MONGODB_URI)
         console.log("db connected")
     }   catch (error){
         console.error(error);
