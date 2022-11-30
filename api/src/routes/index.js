@@ -5,8 +5,8 @@ require("dotenv").config();
 const a = process.env.PRUEBA
 
 server.get("/prueba",async (req,res)=>{
-    let a = await Task.find()
-    res.status(200).send(a)
+    let b = await Task.find()
+    res.status(200).send(b)
 })
 
 server.get("/gama",async (req,res)=>{
