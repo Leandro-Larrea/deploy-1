@@ -9,11 +9,7 @@ server.get("/prueba",async (req,res)=>{
 
 server.get("/gama",async (req,res)=>{
     
-<<<<<<< HEAD
-    res.status(200).send("hola gamaaaaaaaaaaaaa =D ")
-=======
     res.status(200).send("hola gama")
->>>>>>> 31268321691031c170d811cabf692fef6aa910af
 })
 
 server.post("/", async (req,res)=>{
