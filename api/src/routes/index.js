@@ -2,7 +2,7 @@ const express = require("express");
 const server = express();
 const Task = require("../models/task.js")
 require("dotenv").config();
-const a = process.env.prueba
+const a = process.env.PRUEBA
 
 server.get("/prueba",async (req,res)=>{
     let a = await Task.find()
