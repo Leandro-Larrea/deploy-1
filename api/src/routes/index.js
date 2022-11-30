@@ -1,6 +1,8 @@
 const express = require("express");
 const server = express();
 const Task = require("../models/task.js")
+require("dotenv").config();
+const a = process.env.prueba
 
 server.get("/prueba",async (req,res)=>{
     let a = await Task.find()
@@ -8,8 +10,7 @@ server.get("/prueba",async (req,res)=>{
 })
 
 server.get("/gama",async (req,res)=>{
-    
-    res.status(200).send("hola gama")
+    res.status(200).send(a)
 })
 
 server.post("/", async (req,res)=>{
