@@ -2,7 +2,7 @@ const express = require("express");
 const server = express();
 const Task = require("../models/task.js")
 
-server.get("/",async (req,res)=>{
+server.get("/prueba",async (req,res)=>{
     let a = await Task.find()
     res.status(200).send(a)
 })
