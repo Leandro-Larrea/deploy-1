@@ -12,7 +12,7 @@ const {LINK_DB} = process.env
 // }).catch(err =>{
 //     console.error(err)
 // })
-
+console.log(process.env.PRUEBA)
 const db = async () =>{
     try {
         const db = await mongoose.connect(process.env.MONGODB_URI || LINK_DB)
