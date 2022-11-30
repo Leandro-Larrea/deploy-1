@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
+const {LINK_DB} = process.env;
 // const {LINK_DB} = process.env;
 
 // mongoose.connect(connectionsString,{
@@ -15,7 +16,7 @@ require("dotenv").config();
 
 const db = async () =>{
     try {
-        const db = await mongoose.connect(process.env.LINK_DB)
+        const db = await mongoose.connect(LINK_DB)
         console.log("db connected")
     }   catch (error){
         console.error(error);
