@@ -9,6 +9,11 @@ server.get("/prueba",async (req,res)=>{
     res.status(200).send(a)
 })
 
+server.get("/gama",async (req,res)=>{
+    
+    res.status(200).send("hola gama")
+})
+
 server.post("/", async (req,res)=>{
     try {
         let obj = req.body
