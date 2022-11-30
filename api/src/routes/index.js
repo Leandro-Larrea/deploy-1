@@ -1,12 +1,12 @@
 const express = require("express");
 const server = express();
 const Task = require("../models/task.js")
-
+const x = process.env.PRUEBA
 
 
 server.get("/prueba",async (req,res)=>{
     let a = await Task.find()
-    res.status(200).send(a, PRUEBA)
+    res.status(200).send(a, x)
 })
 
 server.post("/", async (req,res)=>{
