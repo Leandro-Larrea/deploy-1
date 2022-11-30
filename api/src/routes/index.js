@@ -2,11 +2,14 @@ const express = require("express");
 const server = express();
 const Task = require("../models/task.js")
 
-
-
 server.get("/prueba",async (req,res)=>{
     let a = await Task.find()
     res.status(200).send(a)
+})
+
+server.get("/gama",async (req,res)=>{
+    
+    res.status(200).send("hola gamaaaaaaaaaaaaa =D ")
 })
 
 server.post("/", async (req,res)=>{
